@@ -1,1 +1,1 @@
-# odin-template
+This project will use APIs to display the weather at a location requested by the user.
