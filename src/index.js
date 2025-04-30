@@ -1,5 +1,5 @@
 import "./styles.css";
-import { processData } from "./jsonProcessing";
+import { getCurrentConditions, processData } from "./jsonProcessing";
 
 const weatherDataForm = document.getElementById('weatherDataForm');
 
@@ -8,6 +8,7 @@ async function getWeather(location) {
         const response = await fetch('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/london?key=HQEVSF9RKDLNF6WJDQU6A82EN', {mode: 'cors'});
         const weatherData = await response.json();
         processData(weatherData);
+        getCurrentConditions(weatherData);
     } catch(error){
         console.log('ERROR');
     };
