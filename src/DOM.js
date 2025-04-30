@@ -41,17 +41,17 @@ const addWeatherHeaders = ()=>{
 
     const maxTempHeader = document.createElement('div');
     maxTempHeader.classList.add('weatherHeader');
-    maxTempHeader.textContent = 'Maximum Temperature';
+    maxTempHeader.textContent = 'Max Temp';
     weatherDisplay.appendChild(maxTempHeader);
 
     const minTempHeader = document.createElement('div');
     minTempHeader.classList.add('weatherHeader');
-    minTempHeader.textContent = 'Minimum Temperature';
+    minTempHeader.textContent = 'Min Temp';
     weatherDisplay.appendChild(minTempHeader);
 
     const precipitationChance = document.createElement('div');
     precipitationChance.classList.add('weatherHeader');
-    precipitationChance.textContent = 'Precipitation Chance';
+    precipitationChance.textContent = 'Precipitation';
     weatherDisplay.appendChild(precipitationChance);
 }
 

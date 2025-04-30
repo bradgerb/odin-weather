@@ -27,6 +27,8 @@ body{
     padding: 30px;
     border: solid black 3px;
     border-radius: 30px;
+    overflow: hidden;
+    gap: 5px;
 }
 
 .weatherHeader{
@@ -35,9 +37,10 @@ body{
     font-weight: bold;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .day{
-    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
 }
