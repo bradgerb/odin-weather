@@ -1,8 +1,9 @@
 const processData = (data)=> {
     const weatherInfo = getWeatherInfo(data);
     const currentConditions = getCurrentConditions(data);
+    const location = getLocation(data);
 
-    return { weatherInfo, currentConditions }
+    return { weatherInfo, currentConditions, location }
 }
 
 const getWeatherInfo = (data)=> {
@@ -24,6 +25,12 @@ const getCurrentConditions = (data)=> {
     let currentConditions = data.currentConditions.conditions;
 
     return currentConditions
+}
+
+const getLocation = (data)=> {
+    let location = data.resolvedAddress;
+    console.log(location);
+    return location
 }
 
 export { processData }
