@@ -4,9 +4,6 @@ const updateWeatherDisplay = (processedData)=> {
     clearWeatherDisplay();
     addWeatherHeaders();
 
-    console.table(processedData.weatherInfo);
-    console.log(processedData.currentConditions);
-
     for (let i = 0; i < processedData.weatherInfo.length; i++){
         const date = document.createElement('div');
         date.classList.add('day');
@@ -57,7 +54,5 @@ const addWeatherHeaders = ()=>{
     precipitationChance.textContent = 'Precipitation Chance';
     weatherDisplay.appendChild(precipitationChance);
 }
-
-
 
 export { updateWeatherDisplay }

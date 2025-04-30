@@ -8,7 +8,6 @@ async function getWeather(location) {
     try{
         const response = await fetch('https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/london?key=HQEVSF9RKDLNF6WJDQU6A82EN', {mode: 'cors'});
         const weatherData = await response.json();
-        console.log('test');
         const processedData = processData(weatherData);
         updateWeatherDisplay(processedData);
     } catch(error){
