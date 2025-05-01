@@ -14,7 +14,7 @@ async function getWeather(location) {
         getGif(processedData.currentConditions);
         // eslint-disable-next-line no-unused-vars
     } catch(error){
-        console.log('Weather error');
+        alert('Error, please check your spelling and try again');
     };
 };
 
