@@ -58,6 +58,12 @@ body{
 .weatherGif{
     display: flex;
     justify-self: center;
+    height: 200px;
+    margin-top: 5px;
+}
+
+.currentConditions{
+    display: flex;
+    justify-self: center;
     margin-top: 50px;
-    height: auto;
 }

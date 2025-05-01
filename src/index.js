@@ -1,6 +1,7 @@
 import "./styles.css";
 import { processData } from "./jsonProcessing";
 import { updateWeatherDisplay } from "./DOM";
+import { getGif } from "./giphy"
 
 const weatherDataForm = document.getElementById('weatherDataForm');
 
@@ -10,8 +11,9 @@ async function getWeather(location) {
         const weatherData = await response.json();
         const processedData = processData(weatherData);
         updateWeatherDisplay(processedData);
+        getGif(processedData.currentConditions);
     } catch(error){
-        console.log('ERROR');
+        console.log('Weather error');
     };
 };
 

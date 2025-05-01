@@ -4,6 +4,7 @@ const updateWeatherDisplay = (processedData)=> {
     clearWeatherDisplay();
     addWeatherHeaders();
     addlocationDisplay(processedData);
+    addCurrentConditions(processedData.currentConditions);
 
     for (let i = 0; i < processedData.weatherInfo.length; i++){
         const date = document.createElement('div');
@@ -59,6 +60,11 @@ const addWeatherHeaders = ()=>{
     precipitationChance.classList.add('weatherHeader');
     precipitationChance.textContent = 'Precipitation';
     weatherDisplay.appendChild(precipitationChance);
+}
+
+const addCurrentConditions = (conditions)=>{
+    const currentConditions = document.querySelector('.currentConditions');
+    currentConditions.textContent = `Weather is: ${conditions}`;
 }
 
 export { updateWeatherDisplay }
