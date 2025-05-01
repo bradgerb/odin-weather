@@ -21,4 +21,4 @@ weatherDataForm.addEventListener('submit', (e)=> {
     getWeather(formData.get('location'));
 });
 
-// getWeather('london');
+getWeather('london');

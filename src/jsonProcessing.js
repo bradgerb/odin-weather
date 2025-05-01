@@ -31,7 +31,7 @@ const getCurrentConditions = (data)=> {
 
 const getLocation = (data)=> {
     let location = data.resolvedAddress;
-    console.log(location);
+    
     return location
 }
 

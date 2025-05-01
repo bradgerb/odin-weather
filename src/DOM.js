@@ -1,5 +1,4 @@
 const weatherDisplay = document.querySelector('.weatherDisplay');
-const locationHeader = document.querySelector('.locationHeader');
 
 const updateWeatherDisplay = (processedData)=> {
     clearWeatherDisplay();
@@ -30,6 +29,7 @@ const updateWeatherDisplay = (processedData)=> {
 };
 
 const addlocationDisplay = (processedData)=>{
+    const locationHeader = document.querySelector('.locationHeader');
     locationHeader.textContent = processedData.location;
 }
 

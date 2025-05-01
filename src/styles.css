@@ -54,3 +54,10 @@ body{
     justify-content: center;
     border-bottom: solid black 1px;
 }
+
+.weatherGif{
+    display: flex;
+    justify-self: center;
+    margin-top: 50px;
+    height: auto;
+}
