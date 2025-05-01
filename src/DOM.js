@@ -1,8 +1,10 @@
 const weatherDisplay = document.querySelector('.weatherDisplay');
+const locationHeader = document.querySelector('.locationHeader');
 
 const updateWeatherDisplay = (processedData)=> {
     clearWeatherDisplay();
     addWeatherHeaders();
+    addlocationDisplay(processedData);
 
     for (let i = 0; i < processedData.weatherInfo.length; i++){
         const date = document.createElement('div');
@@ -26,6 +28,10 @@ const updateWeatherDisplay = (processedData)=> {
         weatherDisplay.appendChild(precipitationChance);
     }
 };
+
+const addlocationDisplay = (processedData)=>{
+    locationHeader.textContent = processedData.location;
+}
 
 const clearWeatherDisplay = ()=>{
     while (weatherDisplay.firstChild) {
