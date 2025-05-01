@@ -12,6 +12,7 @@ async function getWeather(location) {
         const processedData = processData(weatherData);
         updateWeatherDisplay(processedData);
         getGif(processedData.currentConditions);
+        // eslint-disable-next-line no-unused-vars
     } catch(error){
         console.log('Weather error');
     };
