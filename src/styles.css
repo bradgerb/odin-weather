@@ -28,7 +28,7 @@ body{
     border: solid black 3px;
     border-radius: 30px;
     overflow: hidden;
-    gap: 5px;
+    row-gap: 5px;
 }
 
 .weatherHeader{
